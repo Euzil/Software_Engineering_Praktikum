@@ -1,0 +1,78 @@
+@startuml
+participant Actor
+Actor -> Add : startA
+activate Add
+create Position
+Add -> Position : new
+activate Position
+Position --> Add
+deactivate Position
+create Player
+Add -> Player : new
+activate Player
+Player --> Add
+deactivate Player
+create Position
+Add -> Position : new
+activate Position
+Position --> Add
+deactivate Position
+create Player
+Add -> Player : new
+activate Player
+Player --> Add
+deactivate Player
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> Player : print
+activate Player
+Player --> Add
+deactivate Player
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> Player : print
+activate Player
+Player --> Add
+deactivate Player
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> check : oneMoreLook
+activate check
+check -> Spielefield : intial
+activate Spielefield
+Spielefield -> Spielefield : initview
+activate Spielefield
+Spielefield --> Spielefield
+deactivate Spielefield
+Spielefield --> check
+deactivate Spielefield
+check --> Add
+deactivate check
+Add --> Add
+deactivate Add
+return
+@enduml

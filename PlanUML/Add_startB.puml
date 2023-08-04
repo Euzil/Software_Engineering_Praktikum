@@ -1,0 +1,104 @@
+@startuml
+participant Actor
+Actor -> Add : startB
+activate Add
+create Position
+Add -> Position : new
+activate Position
+Position --> Add
+deactivate Position
+create Player
+Add -> Player : new
+activate Player
+Player --> Add
+deactivate Player
+create Position
+Add -> Position : new
+activate Position
+Position --> Add
+deactivate Position
+create Player
+Add -> Player : new
+activate Player
+Player --> Add
+deactivate Player
+create Position
+Add -> Position : new
+activate Position
+Position --> Add
+deactivate Position
+create Player
+Add -> Player : new
+activate Player
+Player --> Add
+deactivate Player
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> Player : print
+activate Player
+Player --> Add
+deactivate Player
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> Player : print
+activate Player
+Player --> Add
+deactivate Player
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> Player : print
+activate Player
+Player --> Add
+deactivate Player
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> check : oneMoreLook2
+activate check
+check -> Spielefield_3er : intial
+activate Spielefield_3er
+Spielefield_3er -> Spielefield_3er : initview
+activate Spielefield_3er
+Spielefield_3er --> Spielefield_3er
+deactivate Spielefield_3er
+Spielefield_3er --> check
+deactivate Spielefield_3er
+check --> Add
+deactivate check
+Add --> Add
+deactivate Add
+return
+@enduml

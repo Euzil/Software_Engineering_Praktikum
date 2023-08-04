@@ -1,0 +1,285 @@
+@startuml
+participant Actor
+Actor -> Spielefield_3er : paint
+activate Spielefield_3er
+Spielefield_3er -> Regelcheck_3er : ifAKuppelRight
+activate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> kuppel_3er : kuppelA
+activate kuppel_3er
+create Position
+kuppel_3er -> Position : new
+activate Position
+Position --> kuppel_3er
+deactivate Position
+kuppel_3er --> Spielefield_3er
+deactivate kuppel_3er
+Spielefield_3er -> Regelcheck_3er : ifBKuppelRight
+activate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> kuppel_3er : kuppelB
+activate kuppel_3er
+create Position
+kuppel_3er -> Position : new
+activate Position
+Position --> kuppel_3er
+deactivate Position
+kuppel_3er --> Spielefield_3er
+deactivate kuppel_3er
+Spielefield_3er -> Regelcheck_3er : ifCKuppelRight
+activate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> kuppel_3er : kuppelC
+activate kuppel_3er
+create Position
+kuppel_3er -> Position : new
+activate Position
+Position --> kuppel_3er
+deactivate Position
+kuppel_3er --> Spielefield_3er
+deactivate kuppel_3er
+Spielefield_3er -> Regelcheck_3er : ifAMoveRight
+activate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInCList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInBList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> Regelcheck_3er : ifAwin
+activate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> moveIN_3er : moveA
+activate moveIN_3er
+create Position
+moveIN_3er -> Position : new
+activate Position
+Position --> moveIN_3er
+deactivate Position
+moveIN_3er --> Spielefield_3er
+deactivate moveIN_3er
+Spielefield_3er -> Winner_3er : winner
+activate Winner_3er
+Winner_3er -> Winner_3er : e ->
+activate Winner_3er
+Winner_3er --> Winner_3er
+deactivate Winner_3er
+Winner_3er -> Winner_3er : e ->
+activate Winner_3er
+Winner_3er --> Winner_3er
+deactivate Winner_3er
+Winner_3er -> Winner_3er : e ->
+activate Winner_3er
+Winner_3er --> Winner_3er
+deactivate Winner_3er
+Winner_3er --> Spielefield_3er
+deactivate Winner_3er
+Spielefield_3er -> moveIN_3er : moveA
+activate moveIN_3er
+create Position
+moveIN_3er -> Position : new
+activate Position
+Position --> moveIN_3er
+deactivate Position
+moveIN_3er --> Spielefield_3er
+deactivate moveIN_3er
+Spielefield_3er -> Regelcheck_3er : ifAPutRight
+activate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInCList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInBList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> putIN_3er : putA
+activate putIN_3er
+create Position
+putIN_3er -> Position : new
+activate Position
+Position --> putIN_3er
+deactivate Position
+putIN_3er --> Spielefield_3er
+deactivate putIN_3er
+Spielefield_3er -> putIN_3er : putA
+activate putIN_3er
+create Position
+putIN_3er -> Position : new
+activate Position
+Position --> putIN_3er
+deactivate Position
+putIN_3er --> Spielefield_3er
+deactivate putIN_3er
+Spielefield_3er -> Regelcheck_3er : ifBMoveRight
+activate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInCList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInAList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> Regelcheck_3er : ifBwin
+activate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> moveIN_3er : moveB
+activate moveIN_3er
+create Position
+moveIN_3er -> Position : new
+activate Position
+Position --> moveIN_3er
+deactivate Position
+moveIN_3er --> Spielefield_3er
+deactivate moveIN_3er
+Spielefield_3er -> Winner_3er : winner
+activate Winner_3er
+Winner_3er -> Winner_3er : e ->
+activate Winner_3er
+Winner_3er --> Winner_3er
+deactivate Winner_3er
+Winner_3er -> Winner_3er : e ->
+activate Winner_3er
+Winner_3er --> Winner_3er
+deactivate Winner_3er
+Winner_3er -> Winner_3er : e ->
+activate Winner_3er
+Winner_3er --> Winner_3er
+deactivate Winner_3er
+Winner_3er --> Spielefield_3er
+deactivate Winner_3er
+Spielefield_3er -> moveIN_3er : moveB
+activate moveIN_3er
+create Position
+moveIN_3er -> Position : new
+activate Position
+Position --> moveIN_3er
+deactivate Position
+moveIN_3er --> Spielefield_3er
+deactivate moveIN_3er
+Spielefield_3er -> Regelcheck_3er : ifBPutRight
+activate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInAList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInCList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> putIN_3er : putB
+activate putIN_3er
+create Position
+putIN_3er -> Position : new
+activate Position
+Position --> putIN_3er
+deactivate Position
+putIN_3er --> Spielefield_3er
+deactivate putIN_3er
+Spielefield_3er -> putIN_3er : putB
+activate putIN_3er
+create Position
+putIN_3er -> Position : new
+activate Position
+Position --> putIN_3er
+deactivate Position
+putIN_3er --> Spielefield_3er
+deactivate putIN_3er
+Spielefield_3er -> Regelcheck_3er : ifCMoveRight
+activate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInAList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInBList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> Regelcheck_3er : ifCwin
+activate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> moveIN_3er : moveC
+activate moveIN_3er
+create Position
+moveIN_3er -> Position : new
+activate Position
+Position --> moveIN_3er
+deactivate Position
+moveIN_3er --> Spielefield_3er
+deactivate moveIN_3er
+Spielefield_3er -> Winner_3er : winner
+activate Winner_3er
+Winner_3er -> Winner_3er : e ->
+activate Winner_3er
+Winner_3er --> Winner_3er
+deactivate Winner_3er
+Winner_3er -> Winner_3er : e ->
+activate Winner_3er
+Winner_3er --> Winner_3er
+deactivate Winner_3er
+Winner_3er -> Winner_3er : e ->
+activate Winner_3er
+Winner_3er --> Winner_3er
+deactivate Winner_3er
+Winner_3er --> Spielefield_3er
+deactivate Winner_3er
+Spielefield_3er -> moveIN_3er : moveC
+activate moveIN_3er
+create Position
+moveIN_3er -> Position : new
+activate Position
+Position --> moveIN_3er
+deactivate Position
+moveIN_3er --> Spielefield_3er
+deactivate moveIN_3er
+Spielefield_3er -> Regelcheck_3er : ifCPutRight
+activate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInAList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er -> Regelcheck_3er : ifInBList
+activate Regelcheck_3er
+Regelcheck_3er --> Regelcheck_3er
+deactivate Regelcheck_3er
+Regelcheck_3er --> Spielefield_3er
+deactivate Regelcheck_3er
+Spielefield_3er -> putIN_3er : putC
+activate putIN_3er
+create Position
+putIN_3er -> Position : new
+activate Position
+Position --> putIN_3er
+deactivate Position
+putIN_3er --> Spielefield_3er
+deactivate putIN_3er
+Spielefield_3er -> putIN_3er : putC
+activate putIN_3er
+create Position
+putIN_3er -> Position : new
+activate Position
+Position --> putIN_3er
+deactivate Position
+putIN_3er --> Spielefield_3er
+deactivate putIN_3er
+return
+@enduml

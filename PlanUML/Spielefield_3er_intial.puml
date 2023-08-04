@@ -1,0 +1,55 @@
+@startuml
+participant Actor
+Actor -> Spielefield_3er : intial
+activate Spielefield_3er
+Spielefield_3er -> Spielefield_3er : initview
+activate Spielefield_3er
+Spielefield_3er -> Spielefield_3er : e ->
+activate Spielefield_3er
+Spielefield_3er --> Spielefield_3er
+deactivate Spielefield_3er
+Spielefield_3er -> Spielefield_3er : e ->
+activate Spielefield_3er
+Spielefield_3er --> Spielefield_3er
+deactivate Spielefield_3er
+Spielefield_3er -> Spielefield_3er : e ->
+activate Spielefield_3er
+Spielefield_3er --> Spielefield_3er
+deactivate Spielefield_3er
+Spielefield_3er -> Spielefield_3er : e ->
+activate Spielefield_3er
+Spielefield_3er -> moveIN_3er : clear
+activate moveIN_3er
+moveIN_3er --> Spielefield_3er
+deactivate moveIN_3er
+Spielefield_3er -> putIN_3er : clear
+activate putIN_3er
+putIN_3er --> Spielefield_3er
+deactivate putIN_3er
+Spielefield_3er -> kuppel_3er : clear
+activate kuppel_3er
+kuppel_3er --> Spielefield_3er
+deactivate kuppel_3er
+Spielefield_3er -> check : oneMoreLook2
+activate check
+check -> Spielefield_3er : intial
+activate Spielefield_3er
+Spielefield_3er --> check
+deactivate Spielefield_3er
+check --> Spielefield_3er
+deactivate check
+Spielefield_3er --> Spielefield_3er
+deactivate Spielefield_3er
+Spielefield_3er -> Spielefield_3er : e ->
+activate Spielefield_3er
+Spielefield_3er --> Spielefield_3er
+deactivate Spielefield_3er
+create Spielefield_3er
+Spielefield_3er -> Spielefield_3er : new
+activate Spielefield_3er
+Spielefield_3er --> Spielefield_3er
+deactivate Spielefield_3er
+Spielefield_3er --> Spielefield_3er
+deactivate Spielefield_3er
+return
+@enduml

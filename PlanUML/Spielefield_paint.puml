@@ -1,0 +1,168 @@
+@startuml
+participant Actor
+Actor -> Spielefield : paint
+activate Spielefield
+Spielefield -> Regelcheck : ifAKuppelRight
+activate Regelcheck
+Regelcheck --> Spielefield
+deactivate Regelcheck
+Spielefield -> kuppel : kuppelA
+activate kuppel
+create Position
+kuppel -> Position : new
+activate Position
+Position --> kuppel
+deactivate Position
+kuppel --> Spielefield
+deactivate kuppel
+Spielefield -> Regelcheck : ifBKuppelRight
+activate Regelcheck
+Regelcheck --> Spielefield
+deactivate Regelcheck
+Spielefield -> kuppel : kuppelB
+activate kuppel
+create Position
+kuppel -> Position : new
+activate Position
+Position --> kuppel
+deactivate Position
+kuppel --> Spielefield
+deactivate kuppel
+Spielefield -> Regelcheck : ifAMoveRight
+activate Regelcheck
+Regelcheck -> Regelcheck : ifInBList
+activate Regelcheck
+Regelcheck --> Regelcheck
+deactivate Regelcheck
+Regelcheck --> Spielefield
+deactivate Regelcheck
+Spielefield -> Regelcheck : ifAwin
+activate Regelcheck
+Regelcheck --> Spielefield
+deactivate Regelcheck
+Spielefield -> moveIN : moveA
+activate moveIN
+create Position
+moveIN -> Position : new
+activate Position
+Position --> moveIN
+deactivate Position
+moveIN --> Spielefield
+deactivate moveIN
+Spielefield -> Winner : winner
+activate Winner
+Winner -> Winner : e ->
+activate Winner
+Winner --> Winner
+deactivate Winner
+Winner -> Winner : e ->
+activate Winner
+Winner --> Winner
+deactivate Winner
+Winner --> Spielefield
+deactivate Winner
+Spielefield -> moveIN : moveA
+activate moveIN
+create Position
+moveIN -> Position : new
+activate Position
+Position --> moveIN
+deactivate Position
+moveIN --> Spielefield
+deactivate moveIN
+Spielefield -> Regelcheck : ifAPutRight
+activate Regelcheck
+Regelcheck -> Regelcheck : ifInBList
+activate Regelcheck
+Regelcheck --> Regelcheck
+deactivate Regelcheck
+Regelcheck --> Spielefield
+deactivate Regelcheck
+Spielefield -> putIN : putA
+activate putIN
+create Position
+putIN -> Position : new
+activate Position
+Position --> putIN
+deactivate Position
+putIN --> Spielefield
+deactivate putIN
+Spielefield -> putIN : putA
+activate putIN
+create Position
+putIN -> Position : new
+activate Position
+Position --> putIN
+deactivate Position
+putIN --> Spielefield
+deactivate putIN
+Spielefield -> Regelcheck : ifBMoveRight
+activate Regelcheck
+Regelcheck -> Regelcheck : ifInAList
+activate Regelcheck
+Regelcheck --> Regelcheck
+deactivate Regelcheck
+Regelcheck --> Spielefield
+deactivate Regelcheck
+Spielefield -> Regelcheck : ifBwin
+activate Regelcheck
+Regelcheck --> Spielefield
+deactivate Regelcheck
+Spielefield -> moveIN : moveB
+activate moveIN
+create Position
+moveIN -> Position : new
+activate Position
+Position --> moveIN
+deactivate Position
+moveIN --> Spielefield
+deactivate moveIN
+Spielefield -> Winner : winner
+activate Winner
+Winner -> Winner : e ->
+activate Winner
+Winner --> Winner
+deactivate Winner
+Winner -> Winner : e ->
+activate Winner
+Winner --> Winner
+deactivate Winner
+Winner --> Spielefield
+deactivate Winner
+Spielefield -> moveIN : moveB
+activate moveIN
+create Position
+moveIN -> Position : new
+activate Position
+Position --> moveIN
+deactivate Position
+moveIN --> Spielefield
+deactivate moveIN
+Spielefield -> Regelcheck : ifBPutRight
+activate Regelcheck
+Regelcheck -> Regelcheck : ifInBList
+activate Regelcheck
+Regelcheck --> Regelcheck
+deactivate Regelcheck
+Regelcheck --> Spielefield
+deactivate Regelcheck
+Spielefield -> putIN : putB
+activate putIN
+create Position
+putIN -> Position : new
+activate Position
+Position --> putIN
+deactivate Position
+putIN --> Spielefield
+deactivate putIN
+Spielefield -> putIN : putB
+activate putIN
+create Position
+putIN -> Position : new
+activate Position
+Position --> putIN
+deactivate Position
+putIN --> Spielefield
+deactivate putIN
+return
+@enduml

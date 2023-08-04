@@ -1,0 +1,1276 @@
+@startuml
+participant Actor
+Actor -> SpielefieldGods : paint
+activate SpielefieldGods
+SpielefieldGods -> kuppel : kuppelA
+activate kuppel
+create Position
+kuppel -> Position : new
+activate Position
+Position --> kuppel
+deactivate Position
+kuppel --> SpielefieldGods
+deactivate kuppel
+SpielefieldGods -> kuppel : kuppelB
+activate kuppel
+create Position
+kuppel -> Position : new
+activate Position
+Position --> kuppel
+deactivate Position
+kuppel --> SpielefieldGods
+deactivate kuppel
+SpielefieldGods -> moveINGods : moveA
+activate moveINGods
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+moveINGods --> SpielefieldGods
+deactivate moveINGods
+SpielefieldGods -> moveINGods : moveC
+activate moveINGods
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+moveINGods --> SpielefieldGods
+deactivate moveINGods
+SpielefieldGods -> RegelcheckGods : ifAMoveRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> Regelcheck : ifAwin
+activate Regelcheck
+Regelcheck --> SpielefieldGods
+deactivate Regelcheck
+SpielefieldGods -> moveINGods : moveA
+activate moveINGods
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+moveINGods --> SpielefieldGods
+deactivate moveINGods
+SpielefieldGods -> RegelcheckGods : ifCMoveRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> Regelcheck : ifAwin
+activate Regelcheck
+Regelcheck --> SpielefieldGods
+deactivate Regelcheck
+SpielefieldGods -> moveINGods : moveC
+activate moveINGods
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+moveINGods --> SpielefieldGods
+deactivate moveINGods
+SpielefieldGods -> moveINGods : selectPawnPl1
+activate moveINGods
+moveINGods --> SpielefieldGods
+deactivate moveINGods
+SpielefieldGods -> kuppel : kuppelA
+activate kuppel
+create Position
+kuppel -> Position : new
+activate Position
+Position --> kuppel
+deactivate Position
+kuppel --> SpielefieldGods
+deactivate kuppel
+SpielefieldGods -> RegelcheckGods : ifAPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putA
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+create Position
+SpielefieldGods -> Position : new
+activate Position
+Position --> SpielefieldGods
+deactivate Position
+SpielefieldGods -> RegelcheckGods : ifAPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putA
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> RegelcheckGods : ifAPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putA
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> RegelcheckGods : ifAPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putA
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> putINGods : putA
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> kuppel : kuppelA
+activate kuppel
+create Position
+kuppel -> Position : new
+activate Position
+Position --> kuppel
+deactivate Position
+kuppel --> SpielefieldGods
+deactivate kuppel
+SpielefieldGods -> RegelcheckGods : ifCPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putA
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+create Position
+SpielefieldGods -> Position : new
+activate Position
+Position --> SpielefieldGods
+deactivate Position
+SpielefieldGods -> RegelcheckGods : ifCPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putA
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> RegelcheckGods : ifCPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putA
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> RegelcheckGods : ifCPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putA
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> putIN : putA
+activate putIN
+create Position
+putIN -> Position : new
+activate Position
+Position --> putIN
+deactivate Position
+putIN --> SpielefieldGods
+deactivate putIN
+SpielefieldGods -> moveINGods : moveB
+activate moveINGods
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+moveINGods --> SpielefieldGods
+deactivate moveINGods
+SpielefieldGods -> moveINGods : moveD
+activate moveINGods
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+moveINGods --> SpielefieldGods
+deactivate moveINGods
+SpielefieldGods -> RegelcheckGods : ifBMoveRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> Regelcheck : ifBwin
+activate Regelcheck
+Regelcheck --> SpielefieldGods
+deactivate Regelcheck
+SpielefieldGods -> moveINGods : moveB
+activate moveINGods
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+moveINGods --> SpielefieldGods
+deactivate moveINGods
+SpielefieldGods -> RegelcheckGods : ifDMoveRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> Regelcheck : ifBwin
+activate Regelcheck
+Regelcheck --> SpielefieldGods
+deactivate Regelcheck
+SpielefieldGods -> moveINGods : moveD
+activate moveINGods
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+create Position
+moveINGods -> Position : new
+activate Position
+Position --> moveINGods
+deactivate Position
+moveINGods --> SpielefieldGods
+deactivate moveINGods
+SpielefieldGods -> moveINGods : selectPawnPl2
+activate moveINGods
+moveINGods --> SpielefieldGods
+deactivate moveINGods
+SpielefieldGods -> kuppel : kuppelB
+activate kuppel
+create Position
+kuppel -> Position : new
+activate Position
+Position --> kuppel
+deactivate Position
+kuppel --> SpielefieldGods
+deactivate kuppel
+SpielefieldGods -> RegelcheckGods : ifBPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putB
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+create Position
+SpielefieldGods -> Position : new
+activate Position
+Position --> SpielefieldGods
+deactivate Position
+SpielefieldGods -> RegelcheckGods : ifBPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putB
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> RegelcheckGods : ifBPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putB
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> RegelcheckGods : ifBPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putB
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> putINGods : putB
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> kuppel : kuppelB
+activate kuppel
+create Position
+kuppel -> Position : new
+activate Position
+Position --> kuppel
+deactivate Position
+kuppel --> SpielefieldGods
+deactivate kuppel
+SpielefieldGods -> RegelcheckGods : ifDPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putB
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+create Position
+SpielefieldGods -> Position : new
+activate Position
+Position --> SpielefieldGods
+deactivate Position
+SpielefieldGods -> RegelcheckGods : ifDPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putB
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> RegelcheckGods : ifDPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putB
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> RegelcheckGods : ifDPutRight
+activate RegelcheckGods
+RegelcheckGods --> SpielefieldGods
+deactivate RegelcheckGods
+SpielefieldGods -> putINGods : putB
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+SpielefieldGods -> putINGods : putB
+activate putINGods
+create Position
+putINGods -> Position : new
+activate Position
+Position --> putINGods
+deactivate Position
+putINGods --> SpielefieldGods
+deactivate putINGods
+return
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+participant Actor
+Actor -> Winner : winner
+activate Winner
+Winner -> Winner : e ->
+activate Winner
+Winner --> Winner
+deactivate Winner
+Winner -> Winner : e ->
+activate Winner
+Winner --> Winner
+deactivate Winner
+return
+@enduml

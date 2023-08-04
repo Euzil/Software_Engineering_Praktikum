@@ -1,0 +1,332 @@
+@startuml
+participant Actor
+Actor -> Beginn : Start
+activate Beginn
+create Position
+Beginn -> Position : new
+activate Position
+Position --> Beginn
+deactivate Position
+create Player
+Beginn -> Player : new
+activate Player
+Player --> Beginn
+deactivate Player
+create Position
+Beginn -> Position : new
+activate Position
+Position --> Beginn
+deactivate Position
+create Player
+Beginn -> Player : new
+activate Player
+Player --> Beginn
+deactivate Player
+Beginn -> Beginn : e ->
+activate Beginn
+Beginn -> Add : startA
+activate Add
+create Position
+Add -> Position : new
+activate Position
+Position --> Add
+deactivate Position
+create Player
+Add -> Player : new
+activate Player
+Player --> Add
+deactivate Player
+create Position
+Add -> Position : new
+activate Position
+Position --> Add
+deactivate Position
+create Player
+Add -> Player : new
+activate Player
+Player --> Add
+deactivate Player
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> Player : print
+activate Player
+Player --> Add
+deactivate Player
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> Player : print
+activate Player
+Player --> Add
+deactivate Player
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> check : oneMoreLook
+activate check
+check --> Add
+deactivate check
+Add --> Add
+deactivate Add
+Add --> Beginn
+deactivate Add
+Beginn --> Beginn
+deactivate Beginn
+Beginn -> Beginn : e ->
+activate Beginn
+Beginn -> Add : startB
+activate Add
+create Position
+Add -> Position : new
+activate Position
+Position --> Add
+deactivate Position
+create Player
+Add -> Player : new
+activate Player
+Player --> Add
+deactivate Player
+create Position
+Add -> Position : new
+activate Position
+Position --> Add
+deactivate Position
+create Player
+Add -> Player : new
+activate Player
+Player --> Add
+deactivate Player
+create Position
+Add -> Position : new
+activate Position
+Position --> Add
+deactivate Position
+create Player
+Add -> Player : new
+activate Player
+Player --> Add
+deactivate Player
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> Player : print
+activate Player
+Player --> Add
+deactivate Player
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> Player : print
+activate Player
+Player --> Add
+deactivate Player
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> Player : print
+activate Player
+Player --> Add
+deactivate Player
+Add --> Add
+deactivate Add
+Add -> Add : e ->
+activate Add
+Add -> check : oneMoreLook2
+activate check
+check --> Add
+deactivate check
+Add --> Add
+deactivate Add
+Add --> Beginn
+deactivate Add
+Beginn --> Beginn
+deactivate Beginn
+Beginn -> Beginn : e ->
+activate Beginn
+Beginn -> AddGods : startAGods
+activate AddGods
+create Position
+AddGods -> Position : new
+activate Position
+Position --> AddGods
+deactivate Position
+create Position
+AddGods -> Position : new
+activate Position
+Position --> AddGods
+deactivate Position
+create Pawn
+AddGods -> Pawn : new
+activate Pawn
+Pawn --> AddGods
+deactivate Pawn
+create Position
+AddGods -> Position : new
+activate Position
+Position --> AddGods
+deactivate Position
+create Pawn
+AddGods -> Pawn : new
+activate Pawn
+Pawn --> AddGods
+deactivate Pawn
+create GodCard
+AddGods -> GodCard : new
+activate GodCard
+GodCard --> AddGods
+deactivate GodCard
+create PlayerGods
+AddGods -> PlayerGods : new
+activate PlayerGods
+PlayerGods --> AddGods
+deactivate PlayerGods
+create Position
+AddGods -> Position : new
+activate Position
+Position --> AddGods
+deactivate Position
+create Position
+AddGods -> Position : new
+activate Position
+Position --> AddGods
+deactivate Position
+create Pawn
+AddGods -> Pawn : new
+activate Pawn
+Pawn --> AddGods
+deactivate Pawn
+create Position
+AddGods -> Position : new
+activate Position
+Position --> AddGods
+deactivate Position
+create Pawn
+AddGods -> Pawn : new
+activate Pawn
+Pawn --> AddGods
+deactivate Pawn
+create GodCard
+AddGods -> GodCard : new
+activate GodCard
+GodCard --> AddGods
+deactivate GodCard
+create PlayerGods
+AddGods -> PlayerGods : new
+activate PlayerGods
+PlayerGods --> AddGods
+deactivate PlayerGods
+AddGods -> AddGods : e ->
+activate AddGods
+AddGods --> AddGods
+deactivate AddGods
+AddGods -> AddGods : e ->
+activate AddGods
+AddGods --> AddGods
+deactivate AddGods
+AddGods -> AddGods : e ->
+activate AddGods
+AddGods --> AddGods
+deactivate AddGods
+AddGods -> AddGods : e ->
+activate AddGods
+AddGods --> AddGods
+deactivate AddGods
+AddGods -> AddGods : e ->
+activate AddGods
+AddGods -> PlayerGods : print
+activate PlayerGods
+PlayerGods --> AddGods
+deactivate PlayerGods
+AddGods --> AddGods
+deactivate AddGods
+AddGods -> AddGods : e ->
+activate AddGods
+AddGods -> PlayerGods : print
+activate PlayerGods
+PlayerGods --> AddGods
+deactivate PlayerGods
+AddGods --> AddGods
+deactivate AddGods
+AddGods -> AddGods : e ->
+activate AddGods
+create GodCard
+AddGods -> GodCard : new
+activate GodCard
+GodCard --> AddGods
+deactivate GodCard
+AddGods --> AddGods
+deactivate AddGods
+AddGods -> AddGods : e ->
+activate AddGods
+create GodCard
+AddGods -> GodCard : new
+activate GodCard
+GodCard --> AddGods
+deactivate GodCard
+AddGods --> AddGods
+deactivate AddGods
+AddGods -> AddGods : e ->
+activate AddGods
+AddGods -> checkGods : oneMoreLook
+activate checkGods
+checkGods --> AddGods
+deactivate checkGods
+AddGods --> AddGods
+deactivate AddGods
+AddGods --> Beginn
+deactivate AddGods
+Beginn --> Beginn
+deactivate Beginn
+return
+@enduml

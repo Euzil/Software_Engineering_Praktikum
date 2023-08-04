@@ -1,0 +1,311 @@
+@startuml
+class tnt.Main {
++ {static} void main(String[])
+}
+class tnt.spiele.Beginn {
++ {static} JFrame jFrame
+- {static} JPanel imagePanel
+- {static} ImageIcon background
++ {static} void Start()
++ {static} void main(String[])
+}
+class tnt.spiele.Winner {
++ {static} JFrame Win
++ {static} void winner()
+}
+class tnt.spiele.Spielefield {
++ {static} int size
++ {static} int[][] Field
++ {static} int a
++ {static} int b
++ {static} boolean WinA
++ {static} boolean WinB
++ {static} boolean ifkuppelA
++ {static} boolean ifkuppelB
+- {static} boolean player1_first
+- {static} boolean player2_first
+- {static} boolean player1_first_put
+- {static} boolean player2_first_put
++ {static} boolean addPoint
++ {static} Graphics2D drawImage
+- {static} JPanel imagePanel
+- {static} ImageIcon background
+- List ListOfPosition
++ <<Create>> Spielefield()
++ {static} void intial()
++ {static} void initview()
++ void paint(Graphics)
++ void mousePressed(MouseEvent)
++ void mouseClicked(MouseEvent)
++ void mouseEntered(MouseEvent)
++ void mouseExited(MouseEvent)
++ void mouseReleased(MouseEvent)
+}
+class tnt.ai.AiInit {
+- {static} State result
+~ {static} void player()
+- {static} int minmax(State,int,boolean,int,int,int)
+~ {static} void test()
+}
+class tnt.model.main {
++ {static} void main(String[])
+}
+class tnt.model.Example {
+- int bar
++ <<Create>> Example(int)
++ int foo(int)
+}
+class tnt.spiele.Winner_3er {
++ {static} JFrame Win
++ {static} void winner()
+}
+class tnt.ai.Coordinates {
+- int x
+- int y
+~ <<Create>> Coordinates(int,int)
+~ int getX()
+~ int getY()
+~ ArrayList<Coordinates> adjacent()
+~ String showAdjacent()
+}
+class tnt.spiele.Regelcheck_4er {
++ {static} boolean ifAwin()
++ {static} boolean ifBwin()
++ {static} boolean ifAMoveRight()
++ {static} boolean ifBMoveRight()
++ {static} void ifAPutRight()
+}
+class tnt.spiele.Regelcheck_3er {
++ {static} boolean ifAwin()
++ {static} boolean ifBwin()
++ {static} boolean ifCwin()
+- {static} boolean ifInAList()
+- {static} boolean ifInBList()
+- {static} boolean ifInCList()
++ {static} boolean ifAMoveRight()
++ {static} boolean ifBMoveRight()
++ {static} boolean ifCMoveRight()
++ {static} boolean ifAPutRight()
++ {static} boolean ifBPutRight()
++ {static} boolean ifCPutRight()
++ {static} boolean ifAKuppelRight()
++ {static} boolean ifBKuppelRight()
++ {static} boolean ifCKuppelRight()
+}
+class tnt.spiele.check {
++ {static} JPanel oneMoreLook()
++ {static} JPanel oneMoreLook2()
++ {static} JPanel oneMoreLook3()
++ {static} void main(String[])
+}
+class tnt.spiele.Regelcheck {
++ {static} boolean ifAwin()
++ {static} boolean ifBwin()
+- {static} boolean ifInAList()
+- {static} boolean ifInBList()
++ {static} boolean ifAMoveRight()
++ {static} boolean ifBMoveRight()
++ {static} boolean ifAPutRight()
++ {static} boolean ifBPutRight()
++ {static} boolean ifAKuppelRight()
++ {static} boolean ifBKuppelRight()
+}
+class tnt.spiele.putIN_3er {
++ {static} List player1_List_put
++ {static} List<Integer> player1_put_x
++ {static} List<Integer> player1_put_y
++ {static} List player2_List_put
++ {static} List<Integer> player2_put_x
++ {static} List<Integer> player2_put_y
++ {static} List player3_List_put
++ {static} List<Integer> player3_put_x
++ {static} List<Integer> player3_put_y
++ {static} void putA()
++ {static} void putB()
++ {static} void putC()
++ {static} void clear()
+}
+class tnt.spiele.putIN_4er {
+}
+class tnt.enginee.Player {
++ String Name
++ Color Color
++ Position position
++ <<Create>> Player(String,java.awt.Color,Position)
++ void setColor(Color)
++ void setName(String)
++ void setBeginPosition(Position)
++ String getName()
++ Color getColor()
++ Position getPosition()
++ void print()
+}
+class tnt.spiele.Spielefield_3er {
++ {static} int size
++ {static} int[][] Field
++ {static} int a
++ {static} int b
++ {static} boolean WinA
++ {static} boolean WinB
++ {static} boolean WinC
++ {static} boolean ifkuppelA
++ {static} boolean ifkuppelB
++ {static} boolean ifkuppelC
+- {static} boolean player1_first
+- {static} boolean player2_first
+- {static} boolean player3_first
+- {static} boolean player1_first_put
+- {static} boolean player2_first_put
+- {static} boolean player3_first_put
++ {static} boolean addPoint
++ {static} Graphics2D drawImage
+- {static} JPanel imagePanel
+- {static} ImageIcon background
+- List ListOfPosition
++ <<Create>> Spielefield_3er()
++ {static} void intial()
++ {static} void initview()
++ void paint(Graphics)
++ void mousePressed(MouseEvent)
++ void mouseClicked(MouseEvent)
++ void mouseEntered(MouseEvent)
++ void mouseExited(MouseEvent)
++ void mouseReleased(MouseEvent)
+}
+class tnt.spiele.Spielefield_4er {
++ void mousePressed(MouseEvent)
++ void mouseClicked(MouseEvent)
++ void mouseEntered(MouseEvent)
++ void mouseExited(MouseEvent)
++ void mouseReleased(MouseEvent)
+}
+class tnt.spiele.moveIN_3er {
++ {static} List player1_List_move
++ {static} int[] player1_move_x
++ {static} int[] player1_move_y
++ {static} List player2_List_move
++ {static} int[] player2_move_x
++ {static} int[] player2_move_y
++ {static} List player3_List_move
++ {static} int[] player3_move_x
++ {static} int[] player3_move_y
++ {static} void moveA()
++ {static} void moveB()
++ {static} void moveC()
++ {static} void clear()
+}
+class tnt.spiele.moveIN_4er {
+}
+class tnt.enginee.MyColor {
+- {static} Color color
++ <<Create>> MyColor()
++ {static} Color getColor(String)
+}
+class tnt.spiele.moveIN {
++ {static} List player1_List_move
++ {static} int[] player1_move_x
++ {static} int[] player1_move_y
++ {static} List player2_List_move
++ {static} int[] player2_move_x
++ {static} int[] player2_move_y
++ {static} void moveA()
++ {static} void moveB()
++ {static} void Clear()
+}
+class tnt.enginee.Position {
++ {static} int x
++ int y
++ <<Create>> Position(int,int)
++ int getX()
++ int getY()
+}
+class tnt.spiele.putIN {
++ {static} List player1_List_put
++ {static} List<Integer> player1_put_x
++ {static} List<Integer> player1_put_y
++ {static} List player2_List_put
++ {static} List<Integer> player2_put_x
++ {static} List<Integer> player2_put_y
++ {static} void putA()
++ {static} void putB()
++ {static} void clear()
+}
+class tnt.spiele.kuppel {
++ {static} List player_List_kuppel
++ {static} List<Integer> kuppel_put_x
++ {static} List<Integer> kuppel_put_y
++ {static} void kuppelA()
++ {static} void kuppelB()
++ {static} void clear()
+}
+class tnt.spiele.kuppel_4er {
+}
+class tnt.enginee.Vector2D {
+- int x
+- int y
++ <<Create>> Vector2D(int,int)
++ int getX()
++ int getY()
++ Vector2D add(Vector2D)
++ Vector2D add(int,int)
++ Vector2D multiply(int)
++ String toString()
+}
+class tnt.spiele.Add {
++ {static} Player player1
++ {static} Player player2
++ {static} Player player3
++ {static} Player player4
+- {static} ImageIcon background
++ {static} int Size
++ {static} JPanel startA()
++ {static} JPanel startB()
++ {static} JPanel startC()
++ {static} void main(String[])
+}
+class tnt.spiele.kuppel_3er {
++ {static} List player_List_kuppel
++ {static} List<Integer> kuppel_put_x
++ {static} List<Integer> kuppel_put_y
++ {static} void kuppelA()
++ {static} void kuppelB()
++ {static} void kuppelC()
++ {static} void clear()
+}
+class tnt.ai.State {
+- int[][] table
+- Coordinates posMaxA
+- Coordinates posMaxB
+- Coordinates posMinA
+- Coordinates posMinB
++ short estPoints
+~ <<Create>> State(Coordinates,Coordinates,Coordinates,Coordinates)
+~ <<Create>> State(int[][],Coordinates,Coordinates,Coordinates,Coordinates)
+~ <<Create>> State(int[][],Coordinates,Coordinates,Coordinates,Coordinates,Coordinates,boolean,boolean)
+~ <<Create>> State(State,Coordinates,Coordinates,Coordinates,Coordinates,Coordinates)
+~ <<Create>> State(State)
+~ Coordinates getA()
+~ Coordinates getB()
+~ Coordinates getC()
+~ Coordinates getD()
+~ int evaluation()
+~ ArrayList<State> child(boolean)
+~ boolean legalMove(Coordinates,Coordinates)
+~ boolean tileOccupied(Coordinates)
+~ boolean legalConstruct(Coordinates,Coordinates)
+~ String showState()
+~ int pointsAdjacent(int)
++ int compareTo(State)
+}
+
+
+java.awt.event.MouseListener <|.. tnt.spiele.Spielefield
+java.awt.Canvas <|-- tnt.spiele.Spielefield
+tnt.spiele.Add <|-- tnt.spiele.check
+java.awt.event.MouseListener <|.. tnt.spiele.Spielefield_3er
+java.awt.Canvas <|-- tnt.spiele.Spielefield_3er
+java.awt.event.MouseListener <|.. tnt.spiele.Spielefield_4er
+java.awt.Canvas <|-- tnt.spiele.Spielefield_4er
+tnt.spiele.Beginn <|-- tnt.spiele.Add
+tnt.ai.Comparable <|.. tnt.ai.State
+@enduml

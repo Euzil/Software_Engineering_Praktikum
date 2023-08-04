@@ -1,0 +1,11 @@
+@startuml
+participant Actor
+Actor -> Spielefield : mousePressed
+activate Spielefield
+create Position
+Spielefield -> Position : new
+activate Position
+Position --> Spielefield
+deactivate Position
+return
+@enduml

@@ -1,0 +1,51 @@
+@startuml
+participant Actor
+Actor -> check : oneMoreLook
+activate check
+check -> Spielefield : intial
+activate Spielefield
+Spielefield -> Spielefield : initview
+activate Spielefield
+Spielefield -> Spielefield : e ->
+activate Spielefield
+Spielefield --> Spielefield
+deactivate Spielefield
+Spielefield -> Spielefield : e ->
+activate Spielefield
+Spielefield --> Spielefield
+deactivate Spielefield
+Spielefield -> Spielefield : e ->
+activate Spielefield
+Spielefield -> kuppel : clear
+activate kuppel
+kuppel --> Spielefield
+deactivate kuppel
+Spielefield -> moveIN : Clear
+activate moveIN
+moveIN --> Spielefield
+deactivate moveIN
+Spielefield -> putIN : clear
+activate putIN
+putIN --> Spielefield
+deactivate putIN
+Spielefield -> check : oneMoreLook
+activate check
+check --> Spielefield
+deactivate check
+Spielefield --> Spielefield
+deactivate Spielefield
+Spielefield -> Spielefield : e ->
+activate Spielefield
+Spielefield --> Spielefield
+deactivate Spielefield
+create Spielefield
+Spielefield -> Spielefield : new
+activate Spielefield
+Spielefield --> Spielefield
+deactivate Spielefield
+Spielefield --> Spielefield
+deactivate Spielefield
+Spielefield --> check
+deactivate Spielefield
+return
+@enduml

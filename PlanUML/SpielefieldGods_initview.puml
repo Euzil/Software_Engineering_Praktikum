@@ -1,0 +1,106 @@
+@startuml
+participant Actor
+Actor -> SpielefieldGods : initview
+activate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+create SpielefieldGods
+SpielefieldGods -> SpielefieldGods : new
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+create SpielefieldGods
+SpielefieldGods -> SpielefieldGods : new
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+create SpielefieldGods
+SpielefieldGods -> SpielefieldGods : new
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+SpielefieldGods -> SpielefieldGods : e ->
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+create SpielefieldGods
+SpielefieldGods -> SpielefieldGods : new
+activate SpielefieldGods
+SpielefieldGods --> SpielefieldGods
+deactivate SpielefieldGods
+return
+@enduml
